@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Veggie Stir Fry Recipe</title>
+</head>
+<body>
+  <h1>Veggie Stir Fry</h1>
+  
+  <h2>Ingredients:</h2>
+  <ul>
+    <% ingredients.forEach(function(item) { %>
+      <li><%= item %></li>
+    <% }); %>
+  </ul>
+  
+  <h2>Instructions:</h2>
+  <ol>
+    <% instructions.forEach(function(step) { %>
+      <li><%= step %></li>
+    <% }); %>
+  </ol>
+  <a href="javascript:history.back()">Back</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desserts</title>
+  </head>
+  <body>
+    <h1>Desserts</h1>
+    <ul>
+      <% for (let i = 0; i < desserts.length; i++) { %>
+        <li><a href="/dessert/<%= desserts[i].id %>"><%= desserts[i].title %></a></li>
+      <% } %>
+      <li><a href="/desserts/chocolate-cake">Chocolate Cake</a></li>
+      <li><a href="/desserts/Cheesecake">Cheesecake</a></li>
+      <li><a href="/desserts/Brownies">Brownies</a></li>
+    </ul>
+    <a href="javascript:history.back()">Back</a>
+  </body>
+</html>

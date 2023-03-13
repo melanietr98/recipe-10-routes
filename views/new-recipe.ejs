@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Create a New Recipe</title>
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/new-recipe.css">
+</head>
+<body>
+	<h1>Create a New Recipe</h1>
+
+	<form action="/recipes" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter recipe name" required>
+
+		<label for="ingredients">Ingredients:</label>
+		<textarea id="ingredients" name="ingredients" placeholder="Enter ingredients separated by commas" required></textarea>
+
+		<label for="steps">Preparation Steps:</label>
+		<textarea id="steps" name="steps" placeholder="Enter preparation steps" required></textarea>
+
+		<button type="submit">Create Recipe</button>
+		<a href="/recipes">Cancel</a>
+	</form>
+
+	<script src="/public/javascripts/new-recipe.js"></script>
+</body>
+</html>

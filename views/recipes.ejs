@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All Recipes</title>
+</head>
+<body>
+  <h1>All Recipes</h1>
+  <ul>
+    <% recipes.forEach(function(recipe) { %>
+      <li><a href="/recipe/<%= recipe.id %>"><%= recipe.title %></a></li>
+    <% }); %>
+    <li><a href="/recipes/spaghetti-bolognese">Spaghetti Bolognese</a></li>
+    <li><a href="/recipes/chicken-alfredo-pasta">Chicken Alfredo Pasta</a></li>
+    <li><a href="/recipes/veggie-stir-fry">Veggie Stir Fry</a></li>
+    <a href="javascript:history.back()">Back</a>
+  </ul>
+</body>
+</html>

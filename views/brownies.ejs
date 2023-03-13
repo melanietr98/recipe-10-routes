@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brownies Recipe</title>
+  </head>
+  <body>
+    <h1>Brownies Recipe</h1>
+    <h2>Ingredients</h2>
+    <ul>
+      <% for (let i = 0; i < recipe.ingredients.length; i++) { %>
+        <li><%= recipe.ingredients[i] %></li>
+      <% } %>
+    </ul>
+    <h2>Instructions</h2>
+    <ol>
+      <% for (let i = 0; i < recipe.instructions.length; i++) { %>
+        <li><%= recipe.instructions[i] %></li>
+      <% } %>
+    </ol>
+    <a href="javascript:history.back()">Back</a>
+  </body>
+</html>

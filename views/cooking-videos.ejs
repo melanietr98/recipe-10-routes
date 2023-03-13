@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cooking Videos</title>
+  </head>
+  <body>
+    <h1>Cooking Videos</h1>
+    <ul>
+      <% for (let i = 0; i < videos.length; i++) { %>
+        <li><a href="<%= videos[i].url %>"><%= videos[i].title %></a></li>
+      <% } %>
+    </ul>
+    <a href="javascript:history.back()">Back</a>
+  </body>
+</html>

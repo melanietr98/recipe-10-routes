@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= recipe.title %></title>
+</head>
+<body>
+  <h1><%= recipe.title %></h1>
+  <ul>
+    <% recipe.ingredients.forEach(function(ingredient) { %>
+      <li><%= ingredient %></li>
+    <% }); %>
+  </ul>
+  <ol>
+    <% recipe.directions.forEach(function(direction) { %>
+      <li><%= direction %></li>
+    <% }); %>
+  </ol>
+  <a href="javascript:history.back()">Back</a>
+</body>
+</html>
