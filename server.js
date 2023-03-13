@@ -54,21 +54,21 @@ app.get('/recipes/veggie-stir-fry', function(req, res) {
 
 
 // Route for a recipe search
-app.get('/search', (req, res) => {
-  const query = req.query.q;
-
-  res.render('search', { query });
-});
+//app.get('/search', (req, res) => {
+//  const query = req.query.q;
+//
+// res.render('search', { query });
+//});
 
 // Route for a recipe form
-app.get('/new-recipe', (req, res) => {
-  res.render('new-recipe');
-});
+//app.get('/new-recipe', (req, res) => {
+//  res.render('new-recipe');
+//});
 
 // Route for handling recipe form submissions
-app.post('/new-recipe', (req, res) => {
-  // Handle form submission logic here
-});
+//app.post('/new-recipe', (req, res) => {
+//  // Handle form submission logic here
+//});
 
 // Route for an "About Me" page
 app.get('/about', (req, res) => {
